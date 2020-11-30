@@ -1,0 +1,12 @@
+<div class="card-columns">
+    <div class="card" *ngFor="let item of arreglo;let id = index;">
+        <img [src]="item.img" class="card-img-top" alt="...">
+        
+        <div class="card-body">
+          <h5 class="card-title">{{item.nombre}}</h5>
+          <p class="card-text">{{item.bio}}</p>
+          <p class="card-text" ><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+        <button class="btn btn-outline-primary btn-block" [routerLink]="['/detalleheroe',id]">Ver mas...</button>
+      </div>
+</div>
