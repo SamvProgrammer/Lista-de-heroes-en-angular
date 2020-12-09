@@ -67,4 +67,22 @@ export class HeroesService {
 
       return this.heroes[indice];
   }
+
+
+  public buscandoheroe(cadena:string){
+    let arreglo:any[] = [];
+
+    cadena = cadena.toLocaleLowerCase();
+
+    for(let item of this.heroes){
+         if(item.nombre.toLocaleLowerCase().includes(cadena)){
+            arreglo.push(item);
+
+         }
+
+    }
+
+    return arreglo;
+
+  }
 }

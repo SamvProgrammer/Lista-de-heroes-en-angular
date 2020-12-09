@@ -4,12 +4,14 @@ import { InicioComponent } from './vistas/cuerpo/inicio/inicio.component';
 import { AboutComponent } from './vistas/cuerpo/about/about.component';
 import { HeroesComponent } from './vistas/cuerpo/heroes/heroes.component';
 import { DetalleheroeComponent } from './vistas/cuerpo/detalleheroe/detalleheroe.component';
+import { HeroesresumenComponent } from './vistas/cuerpo/heroesresumen/heroesresumen.component';
 
 const ROUTES: Routes = [
   {path:"inicio",component:InicioComponent},
   {path:"sobre",component:AboutComponent},
   {path:"heroes",component:HeroesComponent},
   {path:"detalleheroe/:id",component:DetalleheroeComponent},
+  {path:"heroesbuscar/:cadena",component:HeroesresumenComponent},
   {path:"**",redirectTo:"inicio"}];
 
 @NgModule({

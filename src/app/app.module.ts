@@ -9,6 +9,8 @@ import { InicioComponent } from './vistas/cuerpo/inicio/inicio.component';
 import { AboutComponent } from './vistas/cuerpo/about/about.component';
 import { HeroesComponent } from './vistas/cuerpo/heroes/heroes.component';
 import { DetalleheroeComponent } from './vistas/cuerpo/detalleheroe/detalleheroe.component';
+import { HeroesresumenComponent } from './vistas/cuerpo/heroesresumen/heroesresumen.component';
+import { TempleheroeComponent } from './vistas/cuerpo/templeheroe/templeheroe.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { DetalleheroeComponent } from './vistas/cuerpo/detalleheroe/detalleheroe
     InicioComponent,
     AboutComponent,
     HeroesComponent,
-    DetalleheroeComponent
+    DetalleheroeComponent,
+    HeroesresumenComponent,
+    TempleheroeComponent
   ],
   imports: [
     BrowserModule,
