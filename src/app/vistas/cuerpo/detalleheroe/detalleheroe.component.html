@@ -1,1 +1,25 @@
-<p>detalleheroe works!</p>
+<h1>Heroe de {{heroe.casa}} <small>{{heroe.aparicion | date:'y'}}</small> </h1>
+
+
+<hr>
+
+<div class="row">
+    <div class="col-md-4">
+        <img *ngIf="heroe.casa == 'DC';else elseBlock" src="../../../../assets/img/logodc.jpg" class="img-fluid figure-img" alt="">
+
+        <ng-template #elseBlock><img #marvel src="../../../../assets/img/logomarvel.jpg" class="img-fluid figure-img" alt=""></ng-template>
+        <figcaption class="figure-img  text-right">
+            {{heroe.aparicion | date}}
+        </figcaption>
+        <button class="btn btn-outline-primary btn-block" [routerLink]="['/heroes']"> Regresar</button>
+
+    </div>
+
+    <div class="col-md-8">
+        <h3>{{heroe.nombre | uppercase}}</h3>
+
+        <hr>
+        <p>{{heroe.bio}}</p>
+        <img [src]="heroe.img" class="img-fluid" alt="">
+    </div>
+</div>

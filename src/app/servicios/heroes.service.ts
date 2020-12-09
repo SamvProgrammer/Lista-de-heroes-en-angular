@@ -62,4 +62,9 @@ export class HeroesService {
   public getHeroes(){
      return this.heroes; 
   }
+
+  public getHeroe(indice:number):any{
+
+      return this.heroes[indice];
+  }
 }

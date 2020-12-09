@@ -27,7 +27,10 @@
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
-            "scripts": ["node_modules/jquery/dist/jquery.js","node_modules/bootstrap/dist/js/bootstrap.js"]
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -121,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "seccion4"
+  "defaultProject": "seccion4",
+  "cli": {
+    "analytics": false
+  }
 }
